@@ -32,24 +32,48 @@ water_packs = input("how many water packs do you have\n>")'''
     else:
         return "Even"'''
     
-def practice_function(arr):
-    sum
+'''def practice_function(arr):
+    sum'''
 
-def square_digits(num_non,num_nin,num_shing):
+'''def square_digits(num_non,num_nin,num_shing):
     print((num_non) ** 2,(num_nin) ** 2,(num_shing) ** 2)
-try:
-    number_1 = int(input("put number"))
-except:
-    square_digits()
-try:
-    number_2 = int(input("put number"))
-except:
-    square_digits()
-try:
-    number_3 = int(input("put number"))
-except:
-    square_digits()
-square_digits(number_1,number_2,number_3)
+    try:
+        number_1 = int(input("put number"))
+    except:
+        return int(input("put number"))
+    try:
+        number_2 = int(input("put number"))
+    except:
+        return int(input("put number"))
+    try:
+        number_3 = int(input("put number"))
+    except:
+        return int(input("put number"))
+    square_digits(number_1,number_2,number_3)'''
+
+'''def how_many_light_sabers_do_you_own(name):
+    print(name)
+    try:
+        own = input("what is your name")
+    except:
+            if own == "zach":
+                print("you have 18 lightsabers sick")
+            else:
+                print("0")
+    how_many_light_sabers_do_you_own(own)'''
+
+def validate_pin(pin):
+    try:
+        t = input("input pin")
+        r = 4 or 6
+        if len(t) == r:
+            return True
+        else:
+            return False
+    except:
+        return
+
+
     
  
         
