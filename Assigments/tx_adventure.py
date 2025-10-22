@@ -58,9 +58,14 @@ def two():
         print("invaled input")
         two()
 
-    def train():
+def train():
         print("you decide to take the train to moscow.you walk to the train station and you see a crowd looking like a mob outside the train station after that you head inside the train station and bord the train and sit down on a as you leave petrograd you nod off and fall into slumber you awake and leave the train after it arives to the station.after you get of the train you walkout of the station then you go to a horse stable a buy a horse")
         nameing_house = input("name the horse")
 
+def stay():
+    print("a")
+
+def horse():
+    print("nee")
+
 first()
-   
