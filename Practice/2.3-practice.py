@@ -23,3 +23,5 @@ num = int(num)
 
 print(num * num)
 
+
+
