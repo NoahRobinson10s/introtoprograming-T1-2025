@@ -71,7 +71,20 @@ def train():
             no_fruit()
 
 def no_fruit():
-    print("a")
+    print(f"you buy no fruit and live the city after travelling for many days you are traped in a snow storm and running low on food but your percecltlly healthy hourse {nameing_houres} siting right there")
+    print("do you eat your hourse")
+    print("y or n")
+    choose = input(">")
+    if choose == "y":
+        eat()
+    else:
+        no_eat()
+
+def eat():
+    print("you eat your hourse but you still die of hunger")
+
+def no_eat():
+    print("you survive the snow storm becuse you find a food storage cash buried in the snow and you eventully arive at tsaritsyn you quickly head to your familys home and open the door to see your wife and children as you walk in you find that they are all safe and happy you breaf a sigh of relife and smile")
 
 def fruit():
     print("you buy some potatos and leave moscow as you travile along you discover a nagat revolver you pick it up and ride to ryazan as you enter the city and pass through with out troble you keep riding and eventully arive at tsaritsyn you quickly head to your familys home and open the door to see your wife and children as you walk in you find that they are all safe and happy you breaf a sigh of relife and smile")
