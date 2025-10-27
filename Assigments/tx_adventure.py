@@ -345,7 +345,52 @@ def stay_with_family():
         print("invaled input")
         two()
 def lisen():
-    print("")
+    print("you decide to lisen to your wife and stay in petrograd after many months of sitting and staying in the city but you feel unsafe as the bolcvics become more rampant consling power you decide enouge is enouge and you decide to stop the bolcivics and you join the white russians to expell the bolchvics from your homeland and install a democratic govermant and restore the republic and the duma do you")
+    print("do you join the white army")
+    print("1.you do")
+    print("2.you dont")
+    choose = input(">")
+    if choose == "1":
+        dont_join()
+    elif choose == "2":
+        join_white()
+    else:
+        print("invaled input")
+        two()
+
+def dont_join():
+    print("")/
+
+def join_white():
+    print("you join the white army and fight in numerus battles you face the reallity of war constant bomabardmants in wich the ground wolde shake you wonder if it is all worth it if all of this horrer is really worth it if you should leave and head home soon you become a tank gunner you are the spear of the charge usein a bemaoth on the battal feild a british mark V tank after years of servace the whites where everntully deffeted with you being captured by the reds")
+    print("do you try to escape")
+    print("1.you do")
+    print("2.you dont")
+    choose = input(">")
+    if choose == "1":
+        escape()
+    elif choose == "2":
+        no_escape()
+    else:
+        print("invaled input")
+        two()
+
+def escape():
+    print("you escape the line of prisoners and run for it but a geard chases after you and you are cornerd the gared looks to be only about 20 he askes you to go back to the line or he will shoot")
+    print("do you")
+    print("1.stay there")
+    print("2.lunge at him")
+    choose = input(">")
+    if choose == "1":
+        stay_there()
+    elif choose == "2":
+        lunge()
+    else:
+        print("invaled input")
+        two()
+
+def stay_there():
+    print("you stay put and you try talking your way out saying that you have a wife and kids and says that they puninish him if he failes after a fue tense moments he scusese the trigger and you close your eyes ready for death thinking about your family and how your how your children will have to live with out you and a shot rings out but you open your eyes the man drops his gun and says that he cant take it anymore the killing must stop he says and he says that i will help you find your family if you help me find mine and you aggre.")
 
 def you_dont_lisen():
     print("you dissigry with your wife and decide to go to Helsinki you ready your hourse named")
@@ -430,8 +475,8 @@ def you_dont():
 def gamble():
     import random 
 
-    rullet = random.random(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37)
-    color_rulet = random.random("black","red")
+    rullet = random.random(1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 28 or 29 or 30 or 31 or 32 or 33 or 34 or 35 or 36 or 37)
+    color_rulet = random.random("black" or "red")
     geuss = input("what number do you want and what color do you want")
 
     if geuss == rullet and color_rulet:
