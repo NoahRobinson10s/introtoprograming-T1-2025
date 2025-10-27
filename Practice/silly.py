@@ -62,7 +62,7 @@ water_packs = input("how many water packs do you have\n>")'''
                 print("0")
     how_many_light_sabers_do_you_own(own)'''
 
-def validate_pin(pin):
+'''def validate_pin(pin):
     try:
         t = input("input pin")
         r = 4 or 6
@@ -71,7 +71,9 @@ def validate_pin(pin):
         else:
             return False
     except:
-        return
+        return'''
+
+    
 
 
     

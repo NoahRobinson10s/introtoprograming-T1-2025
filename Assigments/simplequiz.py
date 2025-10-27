@@ -25,7 +25,7 @@ else:
     print("your answer is forfit and is offensif to the maker of this program")
     print("no tally")
 
-question_4 = input("where are these cordanis on a map\n>")
+question_4 = input("where are these cordanis on a map 48°52.6′S 123°23.6′W\n>")
 print(question_4 == "48°52.6′S 123°23.6′W")
 if question_4 == "48°52.6′S 123°23.6′W":
     print("good job it is point nemo")

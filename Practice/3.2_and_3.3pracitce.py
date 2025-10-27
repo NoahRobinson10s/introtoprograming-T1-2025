@@ -43,7 +43,7 @@ def password_function():
 password_function()'''
 
 
-password = input("what is your password\n>")
+'''password = input("what is your password\n>")
 print(password == "salsa")
 def password_function():
     if password == "salsa":
@@ -68,8 +68,7 @@ else:
 sentance = str(input("write a sentance\n>"))
 print(sentance.upper())
 print(sentance.strip())
-print(sentance.replace("bad", "good"))
+print(sentance.replace("bad", "good"))'''
 
-coin_diamiter = "dime"
-deposit = 0.00
+
 

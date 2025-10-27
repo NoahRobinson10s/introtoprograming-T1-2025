@@ -20,3 +20,4 @@ mulit(mulit_1,mulit_2)
 div_1 = input("what number are you dividing\n>")
 div_2 = input("what number are you dividing\n>")
 div(div_1,div_2)
+
