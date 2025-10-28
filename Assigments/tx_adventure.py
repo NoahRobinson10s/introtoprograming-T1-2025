@@ -332,6 +332,37 @@ def fight():
         print("you are now a police dectective working for your towns small police departmant in the town that you live in there is small naborhood offshoot with it being fenced in there are around 11 people in the town including you but in one night this small little town along with its people all become suspects in a murder")
         print("it is laght at night when you git the call you head to the neborhood and you head there. There was murder and you must find the killer (play dratmic music)")
         print("there was 10 sucspects marea,gerald,beath,arther,fontame,miss catealda,felix,casper,flint and puff")
+        import random 
+
+        rullet = random.randint(1,10)
+        if rullet == 1:
+            killer = marea
+        elif rullet == 2:
+            killer = gerald
+        elif rullet == 3:
+            killer = beath
+        elif rullet == 4:
+            killer = arther
+        elif rullet == 5:
+            killer = fontame
+        elif rullet == 6:
+            killer = miss_catealda
+        elif rullet == 7:
+            killer = felix
+        elif rullet == 8:
+            killer = casper
+        elif rullet == 9:
+            killer = flint
+        elif rullet == 10:
+            killer = puff
+        else:
+            return yes()
+    print("after takeing statments you go back to the police station")
+    print("do you check each persons files")
+    
+
+
+
 
 
 def horse():
