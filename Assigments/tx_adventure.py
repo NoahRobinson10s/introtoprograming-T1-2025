@@ -313,6 +313,26 @@ def run():
 def fight():
     print("you fight and fight for hours one after another the enemy shoot at you after hours of that they stop and retreat you cheer an yell but it it is a cruil reminder of what is to come after months of constant artillry barages and attacks the enemy breacks through and you rettreat during your retreat you see your commanding offacer shoot fellow sogers after that you decide to flee the red army and deffect to the white russians.you take your family and flee over the volga river and after days of rideing on horse back you arrive at omsk and leave your family there and sign up to the white russian army it is now may 1919 you are shiped off to help some amercians fight in the war where you meet dom you and dom grew into battale brothers he talks about his life in a place called micagen.after about a mounth of fighting with them they leave after 2 more years of fighting the white russians are essantally deffited and you flee to france but you hate french people and you rember doms words that if the war ever went soulth you and your family could go to micgen and he wode help you get on your feet so you and your family go to amercia and end up in detroit micgan and settal down in a small town building a new life in the land of oppertunity but you still remember your time in the war every thunderstrom and every fire work that is lit off.")
     print("ending:AMERCIAN DREAM ENDING")
+    print("wolid you like to contunue the story")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        yes()
+    elif choose == "2":
+        no()
+    else:
+        print("invaled input")
+        two()
+    
+    def no():
+        print("ok")
+
+    def yes():
+        print("you are now a police dectective working for your towns small police departmant in the town that you live in there is small naborhood offshoot with it being fenced in there are around 11 people in the town including you but in one night this small little town along with its people all become suspects in a murder")
+        print("it is laght at night when you git the call you head to the neborhood and you head there. There was murder and you must find the killer (play dratmic music)")
+        print("there was 10 sucspects marea,gerald,beath,arther,fontame,miss catealda,felix,casper,flint and puff")
+
 
 def horse():
     print("you what for your family to come to petrograd after 3 weeks of waiting they arive and you settle in for a long summer you hear of blosivk recrutmant do you want to join")
@@ -375,6 +395,40 @@ def join_white():
     else:
         print("invaled input")
         two()
+
+def no_escape():
+    print("you dont escape and keep walking after a while you see food on the ground")
+    print("what do you do")
+    print("1.pick up")
+    print("2.keep walking")
+    choose = input(">")
+    if choose == "1":
+        pick_up()
+    elif choose == "2":
+        keep_walking()
+    else:
+        print("invaled input")
+        two()
+
+def pick_up():
+    print("you pick up the food.after days of walking you are brought to a prision camp in the siberian plains you are locked in a cold prision cell and are given allmost no food at all")
+    print("what do you do")
+    print("1.eat the food")
+    print("2.dont eat the food")
+    choose = input(">")
+    if choose == "1":
+        prision()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    elif choose == "2":
+        pisttion()
+    else:
+        print("invaled input")
+        two()
+
+def prision():
+    print("you eat the food it isent delicios but it keep you feed after monthes in the prision you are put out in the cold to work and you dont make it")
+    print("ending:gulag")
+def keep_walking():
+    print("")
 
 def escape():
     print("you escape the line of prisoners and run for it but a geard chases after you and you are cornerd the gared looks to be only about 20 he askes you to go back to the line or he will shoot")
