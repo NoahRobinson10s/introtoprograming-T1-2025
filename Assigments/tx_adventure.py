@@ -429,12 +429,16 @@ def marea():
     s = random.randint(1,4)
     if s == 1:
         print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
     elif s == 2:
          print("you find a plastic bag as the murder wepon")
+         wepon_1 = print("plastic bag")
     elif s == 3:
          print("a pan as the murder wepon")
+         wepon_1 = print("pan")
     elif s == 4:
          print("pushed down the stairs")
+         wepon_1 = print("pushed down the stairs")
     else:
         return marea()
     print("you baag the murder wepion and go back to the police station")
@@ -444,22 +448,47 @@ def marea():
     next = random.radint(1,8)
     if next == 1:
         print("gerald has be murderd")
+        gone_1 = print("gerald")
     elif next == 2:
         print("beath has be murderd")
+        gone_1 = print("beath")
     elif next == 3:
         print("arther has been killed")
+        gone_1 = print("arther")
     elif next == 4:
         print("fontame has been murderd")
+        gone_1 = print("fontame")
     elif next == 5:
         print("miss catealda has been murderd")
+        gone_1 = print("miss catealda")
     elif next == 6:
         print("felix has been murderd")
+        gone_1 = print("felix")
     elif next == 7:
         print("casper has been murderd")
+        gone_1 = print("casper")
     elif next == 8:
         print("flint has been murderd")
+        gone_1 = print("flint")
     elif next == 9:
         print("puff has been murderd")
+        gone_1 = print("puff")
+
+    print("you arive on the crime scean and find a nother murder wepon")
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_2 = print("knife")
+    elif s == 2:
+         print("a pan as the murder wepon")
+         wepon_2 = print("pan")
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    
+
+    
     
 yes()
 
