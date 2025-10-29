@@ -318,7 +318,7 @@ def fight():
     print("2.no")
     choose = input(">")
     if choose == "1":
-        yes()
+        file_system()
     elif choose == "2":
         no()
     else:
@@ -328,39 +328,178 @@ def fight():
     def no():
         print("ok")
 
-    def yes():
-        print("you are now a police dectective working for your towns small police departmant in the town that you live in there is small naborhood offshoot with it being fenced in there are around 11 people in the town including you but in one night this small little town along with its people all become suspects in a murder")
-        print("it is laght at night when you git the call you head to the neborhood and you head there. There was murder and you must find the killer (play dratmic music)")
-        print("there was 10 sucspects marea,gerald,beath,arther,fontame,miss catealda,felix,casper,flint and puff")
-        import random 
+def file_system():
+    print("you are now a police dectective working for your towns small police departmant in the town that you live in there is small naborhood offshoot with it being fenced in there are around 11 people in the town including you but in one night this small little town along with its people all become suspects in a murder")
+    print("it is laght at night when you git the call you head to the neborhood and you head there. There was murder and you must find the killer (play dratmic music)")
+    print("there was 10 sucspects marea,gerald,beath,arther,fontame,miss catealda,felix,casper,flint and puff")
+    print("after takeing statments you go back to the police station")
+    x = input("do you check each persons files")
+    if x == "yes":
+      y = input("witch persons 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
+    
+    else:
+        return yes()
+    
+    if x == "1":
+        marea_file()
+    elif x == "2":
+        gerald_file()
+    elif x == "3":
+         beath_file()
+    elif x == "4":
+        arther_file()
+    elif x == "5":
+         fontame_file()
+    elif x == "6":
+        miss_catealda_file()
+    elif x == "7":
+        felix_file()
+    elif x == "8":
+        casper_file()
+    elif x == "9":
+        flint_file()
+    elif x == "10":
+        puff_file()
+    else:
+        return yes()
 
-        rullet = random.randint(1,10)
-        if rullet == 1:
-            killer = marea
-        elif rullet == 2:
-            killer = gerald
-        elif rullet == 3:
-            killer = beath
-        elif rullet == 4:
-            killer = arther
-        elif rullet == 5:
-            killer = fontame
-        elif rullet == 6:
-            killer = miss_catealda
-        elif rullet == 7:
-            killer = felix
-        elif rullet == 8:
-            killer = casper
-        elif rullet == 9:
-            killer = flint
-        elif rullet == 10:
-            killer = puff
+def marea_file():
+    print("maria a small town woman no crimianl record and she runs the bakery in town")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return yes()
+    else:
+        print("invaled input")
+        return file_system()
+
+def gerald_file():
+    print("gerald is the lawn carre specalist nice guy")
+def beath_file():
+    print("")
+def beath_file():
+    print("")
+def beath_file():
+    print("")
+def beath_file():
+    print("")
+def beath_file():
+    print("")
+def beath_file():
+    print("")
+def beath_file():
+    print("")
+def beath_file():
+    print("")
+
+import random
+
+def yes():
+
+        yes = random.randint(1,10)
+        if yes == 1:
+            marea()
+        elif yes == 2:
+             gerald()
+        elif yes == 3:
+             beath()
+        elif yes == 4:
+             arther()
+        elif yes == 5:
+             fontame()
+        elif yes == 6:
+            miss_catealda()
+        elif yes == 7:
+            felix()
+        elif yes == 8:
+            casper()
+        elif yes == 9:
+            flint()
+        elif yes == 10:
+            puff()
         else:
             return yes()
-    print("after takeing statments you go back to the police station")
-    print("do you check each persons files")
 
+def marea():
+    print("you wake up the next day and serach the crime scean.")
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+    elif s == 2:
+         print("you find a plastic bag as the murder wepon")
+    elif s == 3:
+         print("a pan as the murder wepon")
+    elif s == 4:
+         print("pushed down the stairs")
+    else:
+        return marea()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    
+    next = random.radint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+    elif next == 2:
+        print("beath has be murderd")
+    elif next == 3:
+        print("arther has been killed")
+    elif next == 4:
+        print("fontame has been murderd")
+    elif next == 5:
+        print("miss catealda has been murderd")
+    elif next == 6:
+        print("felix has been murderd")
+    elif next == 7:
+        print("casper has been murderd")
+    elif next == 8:
+        print("flint has been murderd")
+    elif next == 9:
+        print("puff has been murderd")
+    
 yes()
+
+    
+
+def gerald():
+    print("")
+
+def beath():
+    print()
+
+def arther():
+    print()
+
+def fontame():
+    print()
+
+def miss_catealda():
+    print()
+
+def felix():
+    print()
+
+def casper():
+    print()
+
+def flint():
+    print()
+
+def puff():
+    print()
+
+
+
+          
+
+
+
+
+
 
 
 
@@ -665,7 +804,6 @@ def you_dont():
     print("ending:finish ending")
 
 def gamble():
-    import random 
 
     rullet = random.randint(1,37)
     color_rulet = random.randint(1,2)
