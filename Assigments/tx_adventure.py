@@ -359,7 +359,8 @@ def fight():
             return yes()
     print("after takeing statments you go back to the police station")
     print("do you check each persons files")
-    
+
+yes()
 
 
 
