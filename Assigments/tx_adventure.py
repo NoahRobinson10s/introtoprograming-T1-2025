@@ -338,7 +338,7 @@ def file_system():
       y = input("witch persons 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
     
     else:
-        return yes()
+        yes()
     
     if x == "1":
         marea_file()
@@ -498,32 +498,43 @@ def puff_file():
 import random
 
 def yes():
-
-        yes = random.randint(1,10)
-        if yes == 1:
-            marea()
-        elif yes == 2:
-             gerald()
-        elif yes == 3:
-             beath()
-        elif yes == 4:
-             arther()
-        elif yes == 5:
-             fontame()
-        elif yes == 6:
-            miss_catealda()
-        elif yes == 7:
-            felix()
-        elif yes == 8:
-            casper()
-        elif yes == 9:
-            flint()
-        elif yes == 10:
-            puff()
-        else:
-            return yes()
+    global criminal
+    yes = random.randint(1,1)
+    if yes == 1:
+        criminal = input("marea")
+        marea()
+    elif yes == 2:
+        criminal = input("gerald")
+        gerald()
+    elif yes == 3:
+         criminal = input("beath")
+         beath()
+    elif yes == 4:
+         criminal = input("arther")
+         arther()
+    elif yes == 5:
+         criminal = input("fontame")
+         fontame()
+    elif yes == 6:
+        criminal = input("miss catealda")
+        miss_catealda()
+    elif yes == 7:
+        criminal = input("felix")
+        felix()
+    elif yes == 8:
+        criminal = input("casper")
+        casper()
+    elif yes == 9:
+        criminal = input("flint")
+        flint()
+    elif yes == 10:
+        criminal = input("puff")
+        puff()
+    else:
+        return yes()
 
 def marea():
+    criminal = print("marea")
     print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
@@ -545,7 +556,7 @@ def marea():
     print("you go to sleep")
     print("the next day you find out that another murder had happened")
     global gone_1
-    next = random.radint(1,8)
+    next = random.randint(1,8)
     if next == 1:
         print("gerald has be murderd")
         gone_1 = print("gerald")
@@ -603,36 +614,85 @@ def two_day_wrap_up(wepon_1,wepon_2,gone_1):
         print("invaled input")
         return two_day_wrap_up()
     
-def intergation():
+def intergation(wepon_1):
     print("")
     w = input("1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
     if w == 1:
         print("gerald has be murderd")
-        gone_2 = print("gerald")
+        gerald_qu()
     elif w == 2:
         print("beath has be murderd")
-        gone_2 = print("beath")
+        beath_qu()
     elif w == 3:
         print("arther has been killed")
-        gone_2 = print("arther")
+        arther_qu()
     elif w == 4:
         print("fontame has been murderd")
-        gone_2 = print("fontame")
+        fontmae_qu()
     elif w == 5:
         print("miss catealda has been murderd")
-        gone_2 = print("miss catealda")
+        miss_catealda_qu()
     elif w == 6:
         print("felix has been murderd")
-        gone_2 = print("felix")
+        felix_qu()
     elif w == 7:
         print("casper has been murderd")
-        gone_2 = print("casper")
+        casper_qu()
     elif w == 8:
         print("flint has been murderd")
-        gone_2 = print("flint")
+        flint_qu()
     elif w == 9:
         print("puff has been murderd")
-        gone_2 = print("puff")
+        puff_qu()
+    elif w == 10:
+        marea_qu()
+    
+def gerald_qu():
+    print("what do you whant to ask gerald")
+    print("1.where wher you last night")
+    print(f"2.do you reconize this wips out {wepon_1}")
+    choose = input(">")
+    if choose == "1":
+        print("gerald ansers 'at the bar'")
+        print("you ask another question but get know where")
+        return two_day_wrap_up()
+    elif choose == "2":
+        print("gerald ansers 'no' ")
+        print("you ask another question but get know where")
+        return two_day_wrap_up
+    else:
+        print("invaled input")
+        return two_day_wrap_up()
+    
+
+
+def beath_qu():
+    print("")
+
+def arther_qu():
+    print("")
+
+def fontmae_qu():
+    print("")
+
+def miss_catealda_qu():
+    print("")
+
+def felix_qu():
+    print("")
+
+def casper_qu():
+    print("")
+
+def flint_qu():
+    print("")
+
+def puff_qu():
+    print("")
+
+def marea_qu():
+    print("")
+    
 
     
 
@@ -684,49 +744,31 @@ def moveing_on(wepon_1,wepon_2,gone_1):
     if choose == "1":
         print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
     elif choose == "2":
-        accuse_marea()
+        guilty_or_no_gulity()
     elif choose == "3":
         secound_qusetioning()
     else:
         print("invaled input")
         return file_system()
     
-def accuse_marea():
-    z = input("who do you what to accuse 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff\n>")
-    if z == '1':
-        print("you arrest marea and she is thrown behind bars at the trial she conffeses to the murders")
-        print("you gusse correctly wlould you like to play agein")
-        print("yes")
-        print("no")
-        choose = input(">")
-        if choose == "yes":
-            return file_system()
-        else:
-            print("ok")
-    elif z == "2":
-        print("you arrest gerald at trial he is found inncent")
-        print("you failed to gess the right person you lost")
-        print("you gusse correctly wlould you like to play agein")
-        print("yes")
-        print("no")
-        choose = input(">")
-        if choose == "yes":
-            return file_system()
-        else:
-            print("ok")
+def secound_qusetioning():
+    print("")
 
 
-    
-
-
-    
-    
-
-    
-    
-yes()
-
-    
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == yes:
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
 
 def gerald():
     print("")
@@ -1223,4 +1265,4 @@ def gamble():
         print("you leave the table")
         print("ending:gambling")
 
-first()
+file_system()
