@@ -372,29 +372,29 @@ def marea_file():
     if choose == "1":
         return file_system()
     elif choose == "2":
-        return yes()
+        return marea_file()
     else:
         print("invaled input")
         return file_system()
 
 def gerald_file():
-    print("gerald is the lawn carre specalist nice guy")
+    print("gerald is the lawn carre specalist,nice guy")
 def beath_file():
-    print("")
-def beath_file():
-    print("")
-def beath_file():
-    print("")
-def beath_file():
-    print("")
-def beath_file():
-    print("")
-def beath_file():
-    print("")
-def beath_file():
-    print("")
-def beath_file():
-    print("")
+    print("beath a gossping nebour but a nice and kind woman")
+def arthur_file():
+    print("arther a nice man but he has his issues")
+def fontame_file():
+    print("fantame a great singer and a thatercal actress")
+def miss_catealda_file():
+    print("miss catealda a woman in here 50s nice now but had some troble in her past.")
+def felix_file():
+    print("felix runs a grochery store in town and is a veteran like you")
+def casper_file():
+    print("casper interesting person he keeps to himself most of the time")
+def flint_file():
+    print("flint runs the local hardwarestore")
+def puff_file():
+    print("puff is a marien biolagest")
 
 import random
 
@@ -482,10 +482,64 @@ def marea():
     elif s == 2:
          print("a pan as the murder wepon")
          wepon_2 = print("pan")
+    two_day_wrap _up()
+
+def two_day_wrap_up():
     print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
     print("a ladys size shoe")
     print("you go back to the police station ad look at your evedance")
     print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+     print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        intergation()
+    elif choose == "2":
+        moveing_on()
+    else:
+        print("invaled input")
+        return two_day_wrap_up()
+    
+def moveing_on():
+    next = random.radint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = print("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = print("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = print("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = print("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = print("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = print("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = print("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = print("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = print("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = print("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_4 = print("pot")
+    print("")
+    
     
 
     
