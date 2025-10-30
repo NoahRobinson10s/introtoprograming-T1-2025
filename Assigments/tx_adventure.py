@@ -349,7 +349,7 @@ def file_system():
     elif x == "4":
         arther_file()
     elif x == "5":
-         fontame_file()
+        fontame_file()
     elif x == "6":
         miss_catealda_file()
     elif x == "7":
@@ -412,7 +412,7 @@ def arthur_file():
     if choose == "1":
         return file_system()
     elif choose == "2":
-        return arther_file()
+        return arthur_file()
     else:
         print("invaled input")
         return file_system()
@@ -525,6 +525,7 @@ def yes():
 
 def marea():
     print("you wake up the next day and serach the crime scean.")
+    global wepon_1
     s = random.randint(1,4)
     if s == 1:
         print("you find a knife as the murder weapon")
@@ -543,7 +544,7 @@ def marea():
     print("you baag the murder wepion and go back to the police station")
     print("you go to sleep")
     print("the next day you find out that another murder had happened")
-    
+    global gone_1
     next = random.radint(1,8)
     if next == 1:
         print("gerald has be murderd")
@@ -573,6 +574,7 @@ def marea():
         print("puff has been murderd")
         gone_1 = print("puff")
 
+    global wepon_2
     print("you arive on the crime scean and find a nother murder wepon")
     s = random.randint(1,2)
     if s == 1:
@@ -581,15 +583,16 @@ def marea():
     elif s == 2:
          print("a pan as the murder wepon")
          wepon_2 = print("pan")
-    two_day_wrap _up()
 
-def two_day_wrap_up():
+    two_day_wrap_up()
+
+def two_day_wrap_up(wepon_1,wepon_2,gone_1):
     print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
     print("a ladys size shoe")
     print("you go back to the police station ad look at your evedance")
     print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
     print("would you like to question someone")
-     print("1.yes")
+    print("1.yes")
     print("2.no")
     choose = input(">")
     if choose == "1":
@@ -600,7 +603,41 @@ def two_day_wrap_up():
         print("invaled input")
         return two_day_wrap_up()
     
-def moveing_on():
+def intergation():
+    print("")
+    w = input("1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
+    if w == 1:
+        print("gerald has be murderd")
+        gone_2 = print("gerald")
+    elif w == 2:
+        print("beath has be murderd")
+        gone_2 = print("beath")
+    elif w == 3:
+        print("arther has been killed")
+        gone_2 = print("arther")
+    elif w == 4:
+        print("fontame has been murderd")
+        gone_2 = print("fontame")
+    elif w == 5:
+        print("miss catealda has been murderd")
+        gone_2 = print("miss catealda")
+    elif w == 6:
+        print("felix has been murderd")
+        gone_2 = print("felix")
+    elif w == 7:
+        print("casper has been murderd")
+        gone_2 = print("casper")
+    elif w == 8:
+        print("flint has been murderd")
+        gone_2 = print("flint")
+    elif w == 9:
+        print("puff has been murderd")
+        gone_2 = print("puff")
+
+    
+
+    
+def moveing_on(wepon_1,wepon_2,gone_1):
     next = random.radint(1,8)
     if next == 1:
         print("gerald has be murderd")
@@ -630,6 +667,7 @@ def moveing_on():
         print("puff has been murderd")
         gone_2 = print("puff")
     print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
     s = random.randint(1,2)
     if s == 1:
         print("you find a cutting bord as the murder weapon")
@@ -646,36 +684,36 @@ def moveing_on():
     if choose == "1":
         print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
     elif choose == "2":
-        accuse_maria()
-    elif choose == "3"
+        accuse_marea()
+    elif choose == "3":
         secound_qusetioning()
     else:
         print("invaled input")
         return file_system()
     
-def accuse():
+def accuse_marea():
     z = input("who do you what to accuse 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff\n>")
-    if z == '1'
-    print("you arrest marea and she is thrown behind bars at the trial she conffeses to the murders")
-    print("you gusse correctly wlould you like to play agein")
-    print("yes")
-    print("no")
-    choose = input(">")
-    if choose == "yes":
-        return file_system()
-    else:
-        print("ok")
-    elif z == "2"
-    print("you arrest gerald at trial he is found inncent")
-    print("you failed to gess the right person you lost")
-    print("you gusse correctly wlould you like to play agein")
-    print("yes")
-    print("no")
-    choose = input(">")
-    if choose == "yes":
-        return file_system()
-    else:
-        print("ok")
+    if z == '1':
+        print("you arrest marea and she is thrown behind bars at the trial she conffeses to the murders")
+        print("you gusse correctly wlould you like to play agein")
+        print("yes")
+        print("no")
+        choose = input(">")
+        if choose == "yes":
+            return file_system()
+        else:
+            print("ok")
+    elif z == "2":
+        print("you arrest gerald at trial he is found inncent")
+        print("you failed to gess the right person you lost")
+        print("you gusse correctly wlould you like to play agein")
+        print("yes")
+        print("no")
+        choose = input(">")
+        if choose == "yes":
+            return file_system()
+        else:
+            print("ok")
 
 
     
