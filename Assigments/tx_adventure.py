@@ -379,22 +379,121 @@ def marea_file():
 
 def gerald_file():
     print("gerald is the lawn carre specalist,nice guy")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return gerald_file()
+    else:
+        print("invaled input")
+        return file_system()
 def beath_file():
     print("beath a gossping nebour but a nice and kind woman")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return beath_file()
+    else:
+        print("invaled input")
+        return file_system()
 def arthur_file():
     print("arther a nice man but he has his issues")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return arther_file()
+    else:
+        print("invaled input")
+        return file_system()
 def fontame_file():
     print("fantame a great singer and a thatercal actress")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return fontame_file()
+    else:
+        print("invaled input")
+        return file_system()
 def miss_catealda_file():
     print("miss catealda a woman in here 50s nice now but had some troble in her past.")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return miss_catealda_file()
+    else:
+        print("invaled input")
+        return file_system()
 def felix_file():
     print("felix runs a grochery store in town and is a veteran like you")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return felix_file()
+    else:
+        print("invaled input")
+        return file_system()
 def casper_file():
     print("casper interesting person he keeps to himself most of the time")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return casper_file()
+    else:
+        print("invaled input")
+        return file_system()
 def flint_file():
     print("flint runs the local hardwarestore")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return flint_file()
+    else:
+        print("invaled input")
+        return file_system()
 def puff_file():
     print("puff is a marien biolagest")
+    print("wold you like to return to the file system")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    elif choose == "2":
+        return puff_file()
+    else:
+        print("invaled input")
+        return file_system()
 
 import random
 
@@ -537,8 +636,51 @@ def moveing_on():
         wepon_3 = print("cutting bord")
     elif s == 2:
          print("a pot as the murder wepon")
-         wepon_4 = print("pot")
-    print("")
+         wepon_3 = print("pot")
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    print("3.qusetion someone")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+    elif choose == "2":
+        accuse_maria()
+    elif choose == "3"
+        secound_qusetioning()
+    else:
+        print("invaled input")
+        return file_system()
+    
+def accuse():
+    z = input("who do you what to accuse 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff\n>")
+    if z == '1'
+    print("you arrest marea and she is thrown behind bars at the trial she conffeses to the murders")
+    print("you gusse correctly wlould you like to play agein")
+    print("yes")
+    print("no")
+    choose = input(">")
+    if choose == "yes":
+        return file_system()
+    else:
+        print("ok")
+    elif z == "2"
+    print("you arrest gerald at trial he is found inncent")
+    print("you failed to gess the right person you lost")
+    print("you gusse correctly wlould you like to play agein")
+    print("yes")
+    print("no")
+    choose = input(">")
+    if choose == "yes":
+        return file_system()
+    else:
+        print("ok")
+
+
+    
+
+
     
     
 
