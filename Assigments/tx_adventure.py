@@ -333,7 +333,7 @@ def file_system():
     print("it is laght at night when you git the call you head to the neborhood and you head there. There was murder and you must find the killer (play dratmic music)")
     print("there was 10 sucspects marea,gerald,beath,arther,fontame,miss catealda,felix,casper,flint and puff")
     print("after takeing statments you go back to the police station")
-    x = input("do you check each persons files")
+    x = input("do you check each persons files\n>")
     if x == "yes":
       y = input("witch persons 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
     
@@ -496,45 +496,44 @@ def puff_file():
         return file_system()
 
 import random
-
+criminal = None
 def yes():
     global criminal
     yes = random.randint(1,1)
     if yes == 1:
-        criminal = input("marea")
+        criminal = ("marea")
         marea()
     elif yes == 2:
-        criminal = input("gerald")
+        criminal = ("gerald")
         gerald()
     elif yes == 3:
-         criminal = input("beath")
+         criminal = ("beath")
          beath()
     elif yes == 4:
-         criminal = input("arther")
+         criminal = ("arther")
          arther()
     elif yes == 5:
-         criminal = input("fontame")
+         criminal = ("fontame")
          fontame()
     elif yes == 6:
-        criminal = input("miss catealda")
+        criminal = ("miss catealda")
         miss_catealda()
     elif yes == 7:
-        criminal = input("felix")
+        criminal = ("felix")
         felix()
     elif yes == 8:
-        criminal = input("casper")
+        criminal = ("casper")
         casper()
     elif yes == 9:
-        criminal = input("flint")
+        criminal = ("flint")
         flint()
     elif yes == 10:
-        criminal = input("puff")
+        criminal = ("puff")
         puff()
     else:
         return yes()
 
 def marea():
-    criminal = print("marea")
     print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
@@ -559,43 +558,42 @@ def marea():
     next = random.randint(1,8)
     if next == 1:
         print("gerald has be murderd")
-        gone_1 = print("gerald")
+        gone_1 = ("gerald")
     elif next == 2:
         print("beath has be murderd")
-        gone_1 = print("beath")
+        gone_1 = ("beath")
     elif next == 3:
         print("arther has been killed")
-        gone_1 = print("arther")
+        gone_1 = ("arther")
     elif next == 4:
         print("fontame has been murderd")
-        gone_1 = print("fontame")
+        gone_1 = ("fontame")
     elif next == 5:
         print("miss catealda has been murderd")
-        gone_1 = print("miss catealda")
+        gone_1 = ("miss catealda")
     elif next == 6:
         print("felix has been murderd")
-        gone_1 = print("felix")
+        gone_1 = ("felix")
     elif next == 7:
         print("casper has been murderd")
-        gone_1 = print("casper")
+        gone_1 = ("casper")
     elif next == 8:
         print("flint has been murderd")
-        gone_1 = print("flint")
+        gone_1 = ("flint")
     elif next == 9:
         print("puff has been murderd")
-        gone_1 = print("puff")
+        gone_1 = ("puff")
+    
+    secound_wepon()
 
+wepon_2 = None
+
+def secound_wepon():
     global wepon_2
     print("you arive on the crime scean and find a nother murder wepon")
-    s = random.randint(1,2)
-    if s == 1:
-        print("you find a knife as the murder weapon")
-        wepon_2 = print("knife")
-    elif s == 2:
-         print("a pan as the murder wepon")
-         wepon_2 = print("pan")
+    wepon_2 = "pan"
 
-    two_day_wrap_up()
+    two_day_wrap_up(wepon_1,wepon_2,gone_1)
 
 def two_day_wrap_up(wepon_1,wepon_2,gone_1):
     print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
@@ -607,19 +605,19 @@ def two_day_wrap_up(wepon_1,wepon_2,gone_1):
     print("2.no")
     choose = input(">")
     if choose == "1":
-        intergation()
+        intergation(wepon_1)
     elif choose == "2":
         moveing_on()
     else:
         print("invaled input")
-        return two_day_wrap_up()
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
     
 def intergation(wepon_1):
     print("")
     w = input("1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
     if w == 1:
         print("gerald has be murderd")
-        gerald_qu()
+        gerald_qu(wepon_1)
     elif w == 2:
         print("beath has be murderd")
         beath_qu()
@@ -647,7 +645,7 @@ def intergation(wepon_1):
     elif w == 10:
         marea_qu()
     
-def gerald_qu():
+def gerald_qu(wepon_1):
     print("what do you whant to ask gerald")
     print("1.where wher you last night")
     print(f"2.do you reconize this wips out {wepon_1}")
@@ -697,44 +695,49 @@ def marea_qu():
     
 
     
-def moveing_on(wepon_1,wepon_2,gone_1):
-    next = random.radint(1,8)
+def moveing_on():
+    global  gone_2
+    next = random.randint(1,8)
     if next == 1:
         print("gerald has be murderd")
-        gone_2 = print("gerald")
+        gone_2 = ("gerald")
     elif next == 2:
         print("beath has be murderd")
-        gone_2 = print("beath")
+        gone_2 = ("beath")
     elif next == 3:
         print("arther has been killed")
-        gone_2 = print("arther")
+        gone_2 = ("arther")
     elif next == 4:
         print("fontame has been murderd")
-        gone_2 = print("fontame")
+        gone_2 = ("fontame")
     elif next == 5:
         print("miss catealda has been murderd")
-        gone_2 = print("miss catealda")
+        gone_2 = ("miss catealda")
     elif next == 6:
         print("felix has been murderd")
-        gone_2 = print("felix")
+        gone_2 = ("felix")
     elif next == 7:
         print("casper has been murderd")
-        gone_2 = print("casper")
+        gone_2 = ("casper")
     elif next == 8:
         print("flint has been murderd")
-        gone_2 = print("flint")
+        gone_2 = ("flint")
     elif next == 9:
         print("puff has been murderd")
-        gone_2 = print("puff")
+        gone_2 = ("puff")
     print("you arive on the crime scean and find a nother murder wepon")
     global wepon_3
     s = random.randint(1,2)
     if s == 1:
         print("you find a cutting bord as the murder weapon")
-        wepon_3 = print("cutting bord")
+        wepon_3 = ("cutting bord")
     elif s == 2:
          print("a pot as the murder wepon")
-         wepon_3 = print("pot")
+         wepon_3 = ("pot")
+
+    him(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def him(gone_1,wepon_3,wepon_2,wepon_1):
     print("yet a nother murder time is running out you must choose")
     print("what will you do")
     print("1.look at evdance")
@@ -743,8 +746,9 @@ def moveing_on(wepon_1,wepon_2,gone_1):
     choose = input(">")
     if choose == "1":
         print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
     elif choose == "2":
-        guilty_or_no_gulity()
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
     elif choose == "3":
         secound_qusetioning()
     else:
@@ -757,7 +761,7 @@ def secound_qusetioning():
 
 def guilty_or_no_gulity(crimnal,gone_1,gone_2):
     arrest = input("who would you like to arrest\n>")
-    if arrest == yes:
+    if arrest == "marea":
         print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
     else:
         print(f"at trial {arrest} is found not guilty and is not the killer")

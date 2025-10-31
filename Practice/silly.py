@@ -72,8 +72,28 @@ water_packs = input("how many water packs do you have\n>")'''
             return False
     except:
         return'''
+def skksjk():
+    global wepon_2
+    import random
+    print("you arive on the crime scean and find a nother murder wepon")
+    s = random.randint(1,2)
+    if s == 1:
+        wepon_2 = "knife"
+        print("you find a knife as the murder weapon")
+    elif s == 2:
+        wepon_2 = "pan"
+        print("a pan as the murder wepon")
 
-    
+    two_day_wrap_up(wepon_2,wepon_1,gone_1)
+
+def two_day_wrap_up(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
 
 
     
