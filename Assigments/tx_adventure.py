@@ -2393,4 +2393,4 @@ def gamble():
         print("you leave the table")
         print("ending:gambling")
 
-file_system()
+first()
