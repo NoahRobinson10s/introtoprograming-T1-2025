@@ -605,91 +605,10 @@ def two_day_wrap_up(wepon_1,wepon_2,gone_1):
     print("2.no")
     choose = input(">")
     if choose == "1":
-        intergation(wepon_1)
-    elif choose == "2":
         moveing_on()
     else:
         print("invaled input")
         return two_day_wrap_up(wepon_1,wepon_2,gone_1)
-    
-def intergation(wepon_1):
-    print("")
-    w = input("1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
-    if w == 1:
-        print("gerald has be murderd")
-        gerald_qu(wepon_1)
-    elif w == 2:
-        print("beath has be murderd")
-        beath_qu()
-    elif w == 3:
-        print("arther has been killed")
-        arther_qu()
-    elif w == 4:
-        print("fontame has been murderd")
-        fontmae_qu()
-    elif w == 5:
-        print("miss catealda has been murderd")
-        miss_catealda_qu()
-    elif w == 6:
-        print("felix has been murderd")
-        felix_qu()
-    elif w == 7:
-        print("casper has been murderd")
-        casper_qu()
-    elif w == 8:
-        print("flint has been murderd")
-        flint_qu()
-    elif w == 9:
-        print("puff has been murderd")
-        puff_qu()
-    elif w == 10:
-        marea_qu()
-    
-def gerald_qu(wepon_1):
-    print("what do you whant to ask gerald")
-    print("1.where wher you last night")
-    print(f"2.do you reconize this wips out {wepon_1}")
-    choose = input(">")
-    if choose == "1":
-        print("gerald ansers 'at the bar'")
-        print("you ask another question but get know where")
-        return two_day_wrap_up()
-    elif choose == "2":
-        print("gerald ansers 'no' ")
-        print("you ask another question but get know where")
-        return two_day_wrap_up
-    else:
-        print("invaled input")
-        return two_day_wrap_up()
-    
-
-
-def beath_qu():
-    print("")
-
-def arther_qu():
-    print("")
-
-def fontmae_qu():
-    print("")
-
-def miss_catealda_qu():
-    print("")
-
-def felix_qu():
-    print("")
-
-def casper_qu():
-    print("")
-
-def flint_qu():
-    print("")
-
-def puff_qu():
-    print("")
-
-def marea_qu():
-    print("")
     
 
     
@@ -742,6 +661,316 @@ def him(gone_1,wepon_3,wepon_2,wepon_1):
     print("what will you do")
     print("1.look at evdance")
     print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
+#gerald section
+def gerald():
+        print("you wake up the next day and serach the crime scean.")
+    global weponn_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a lawnmower as the murder wepon")
+         wepon_1 = print("plastic bag")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("heage clipers")
+         wepon_1 = print("pushed down the stairs")
+    else:
+        return gerald()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("marea has be murderd")
+        gone_1 = ("marea")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_1 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_1 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_1 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_1 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_1 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_1 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_1 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_weponn()
+
+wepon_2 = None
+
+def secound_weponn():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "shovle"
+
+    two_day_wrap_upp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_upp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_nom()
+    else:
+        print("invaled input")
+        return two_day_wrap_upp(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_nom():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("marea has be murderd")
+        gone_2 = ("marea")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    them(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def them(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+    
+
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
+#beath
+def beath():
+        print("you wake up the next day and serach the crime scean.")
+    global wepon_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a plastic bag as the murder wepon")
+         wepon_1 = print("plastic bag")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("pushed down the stairs")
+         wepon_1 = print("pushed down the stairs")
+    else:
+        return beath()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_1 = ("gerald")
+    elif next == 2:
+        print("marea has be murderd")
+        gone_1 = ("marea")
+    elif next == 3:
+        print("arther has been killed")
+        gone_1 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_1 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_1 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_1 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_1 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_1 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_weponnn()
+
+wepon_2 = None
+
+def secound_weponnn():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "pan"
+
+    two_day_wrap_uppp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_uppp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_onn()
+    else:
+        print("invaled input")
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_onn():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = ("gerald")
+    elif next == 2:
+        print("marea has be murderd")
+        gone_2 = ("marea")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    himm(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def himm(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
     print("3.qusetion someone")
     choose = input(">")
     if choose == "1":
@@ -749,14 +978,9 @@ def him(gone_1,wepon_3,wepon_2,wepon_1):
         return him(gone_1,wepon_3,wepon_2,wepon_1)
     elif choose == "2":
         guilty_or_no_gulity(criminal,gone_1,gone_2)
-    elif choose == "3":
-        secound_qusetioning()
     else:
         print("invaled input")
         return file_system()
-    
-def secound_qusetioning():
-    print("")
 
 
 def guilty_or_no_gulity(crimnal,gone_1,gone_2):
@@ -774,32 +998,931 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
     else:
         print("ok")
 
-def gerald():
-    print("")
-
-def beath():
-    print()
-
 def arther():
-    print()
+        print("you wake up the next day and serach the crime scean.")
+    global wepon_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a pen as the murder wepon")
+         wepon_1 = print("pen")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("pushed down the stairs")
+         wepon_1 = print("pushed down the stairs")
+    else:
+        return arther()
+    print("you bag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_1 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_1 = ("beath")
+    elif next == 3:
+        print("marea has been killed")
+        gone_1 = ("marea")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_1 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_1 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_1 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_1 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_1 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_weponnnnn()
+
+wepon_2 = None
+
+def secound_weponnnn():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "pan"
+
+    two_day_wrap_uppppp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_upppp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_onnnn()
+    else:
+        print("invaled input")
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_onnnn():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = ("beath")
+    elif next == 3:
+        print("marea has been killed")
+        gone_2 = ("marea")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    himmm(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def himmm(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
 
 def fontame():
-    print()
+        print("you wake up the next day and serach the crime scean.")
+    global wepon_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a plastic bag as the murder wepon")
+         wepon_1 = print("a  microphone wire")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("pushed down the stairs")
+         wepon_1 = print("pushed down the stairs")
+    else:
+        return fontame()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_1 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_1 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_1 = ("arther")
+    elif next == 4:
+        print("marea has been murderd")
+        gone_1 = ("marea")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_1 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_1 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_1 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_1 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_wepon()
 
+wepon_2 = None
+
+def secound_wepon():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "pan"
+
+    two_day_wrap_uppppppp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_upppppp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_onnnnnn()
+    else:
+        print("invaled input")
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_onnnnn():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = ("arther")
+    elif next == 4:
+        print("marea has been murderd")
+        gone_2 = ("marea")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    himmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def himmmm(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
+#miss catealda track
 def miss_catealda():
-    print()
+        print("you wake up the next day and serach the crime scean.")
+    global wepon_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a kitting sticks as the murder wepon")
+         wepon_1 = print("kitting sticks")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("pushed down the stairs")
+         wepon_1 = print("pushed down the stairs")
+    else:
+        return miss_catealda()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_1 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_1 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_1 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_1 = ("fontame")
+    elif next == 5:
+        print("marea has been murderd")
+        gone_1 = ("marea")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_1 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_1 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_1 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_weponnnnnnn()
 
+wepon_2 = None
+
+def secound_weponnnnnn():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "pan"
+
+    two_day_wrap_uppppppppp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_upppppppp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_onnnnnnnn()
+    else:
+        print("invaled input")
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_onnnnnnn():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    himmmmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def himmmmmm(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
+#felix track
 def felix():
-    print()
+        print("you wake up the next day and serach the crime scean.")
+    global wepon_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a saw as the murder wepon")
+         wepon_1 = print("saw")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("pushed down the stairs")
+         wepon_1 = print("pushed down the stairs")
+    else:
+        return felix()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_1 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_1 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_1 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_1 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_1 = ("miss catealda")
+    elif next == 6:
+        print("marea has been murderd")
+        gone_1 = ("marea")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_1 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_1 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_weponnnnnnnn()
+
+wepon_2 = None
+
+def secound_weponnnnnnnn():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "pan"
+
+    two_day_wrap_upppppppppp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_upppppppppp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_onnnnnnnnnn()
+    else:
+        print("invaled input")
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_onnnnnnnnn():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("marea has been murderd")
+        gone_2 = ("marea")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    himmmmmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def himmmmmmmm(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
 
 def casper():
-    print()
+        print("you wake up the next day and serach the crime scean.")
+    global wepon_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a pumkin as the murder wepon")
+         wepon_1 = print("pumkin")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("a nail gun as the murder wepon")
+         wepon_1 = print("nail gun")
+    else:
+        return casper()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_1 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_1 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_1 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_1 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_1 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_1 = ("felix")
+    elif next == 7:
+        print("marea has been murderd")
+        gone_1 = ("marea")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_1 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_wepon()
+
+wepon_2 = None
+
+def secound_wepon():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "pan"
+
+    two_day_wrap_upppppppppppp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_upppppppppppp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_onnnnnnnnnnn()
+    else:
+        print("invaled input")
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_onnnnnnnnnnn():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = ("felix")
+    elif next == 7:
+        print("marea has been murderd")
+        gone_2 = ("marea")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    himmmmmmmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def himmmmmmmmmm(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
 
 def flint():
-    print()
+        print("you wake up the next day and serach the crime scean.")
+    global wepon_1
+    s = random.randint(1,4)
+    if s == 1:
+        print("you find a knife as the murder weapon")
+        wepon_1 = print("knife")
+    elif s == 2:
+         print("you find a pipe as the murder wepon")
+         wepon_1 = print("pipe")
+    elif s == 3:
+         print("a pan as the murder wepon")
+         wepon_1 = print("pan")
+    elif s == 4:
+         print("pushed down the stairs")
+         wepon_1 = print("pushed down the stairs")
+    else:
+        return flint()
+    print("you baag the murder wepion and go back to the police station")
+    print("you go to sleep")
+    print("the next day you find out that another murder had happened")
+    global gone_1
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_1 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_1 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_1 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_1 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_1 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_1 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_1 = ("casper")
+    elif next == 8:
+        print("marea has been murderd")
+        gone_1 = ("marea")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_1 = ("puff")
+    
+    secound_weponnnnnnnnnn()
 
-def puff():
-    print()
+wepon_2 = None
+
+def secound_weponnnnnnnnnn():
+    global wepon_2
+    print("you arive on the crime scean and find a nother murder wepon")
+    wepon_2 = "pan"
+
+    two_day_wrap_upppppppppppppp(wepon_1,wepon_2,gone_1)
+
+def two_day_wrap_upppppppppppppp(wepon_1,wepon_2,gone_1):
+    print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
+    print("a ladys size shoe")
+    print("you go back to the police station ad look at your evedance")
+    print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.")
+    print("would you like to question someone")
+    print("1.yes")
+    print("2.no")
+    choose = input(">")
+    if choose == "1":
+        moveing_onnnnnnnnnnnnn()
+    else:
+        print("invaled input")
+        return two_day_wrap_up(wepon_1,wepon_2,gone_1)
+    
+
+    
+
+    
+def moveing_onnnnnnnnnnnnn():
+    global  gone_2
+    next = random.randint(1,8)
+    if next == 1:
+        print("gerald has be murderd")
+        gone_2 = ("gerald")
+    elif next == 2:
+        print("beath has be murderd")
+        gone_2 = ("beath")
+    elif next == 3:
+        print("arther has been killed")
+        gone_2 = ("arther")
+    elif next == 4:
+        print("fontame has been murderd")
+        gone_2 = ("fontame")
+    elif next == 5:
+        print("miss catealda has been murderd")
+        gone_2 = ("miss catealda")
+    elif next == 6:
+        print("felix has been murderd")
+        gone_2 = ("felix")
+    elif next == 7:
+        print("casper has been murderd")
+        gone_2 = ("casper")
+    elif next == 8:
+        print("flint has been murderd")
+        gone_2 = ("flint")
+    elif next == 9:
+        print("puff has been murderd")
+        gone_2 = ("puff")
+    print("you arive on the crime scean and find a nother murder wepon")
+    global wepon_3
+    s = random.randint(1,2)
+    if s == 1:
+        print("you find a cutting bord as the murder weapon")
+        wepon_3 = ("cutting bord")
+    elif s == 2:
+         print("a pot as the murder wepon")
+         wepon_3 = ("pot")
+
+    himmmmmmmmmmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
+
+def himmmmmmmmmmmmm(gone_1,wepon_3,wepon_2,wepon_1):
+    print("yet a nother murder time is running out you must choose")
+    print("what will you do")
+    print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        print(f"your currrent evedance is {wepon_1} was the mured wepon for the first murder and {wepon_2} was the murder wepon for the murder of {gone_1} and a ladys shoes foot print.for the secound murder there was {wepon_3}.")
+        return him(gone_1,wepon_3,wepon_2,wepon_1)
+    elif choose == "2":
+        guilty_or_no_gulity(criminal,gone_1,gone_2)
+    else:
+        print("invaled input")
+        return file_system()
+
+
+def guilty_or_no_gulity(crimnal,gone_1,gone_2):
+    arrest = input("who would you like to arrest\n>")
+    if arrest == "marea":
+        print(f"correct {crimnal} confesses at trial for the murders of {gone_1} and {gone_2}")
+    else:
+        print(f"at trial {arrest} is found not guilty and is not the killer")
+        print("woulde you like to play agien")
+        print("1.look at evdance")
+    print("2.accuse and imprision a person")
+    choose = input(">")
+    if choose == "1":
+        return file_system()
+    else:
+        print("ok")
 
 
 
