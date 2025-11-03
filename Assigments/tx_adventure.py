@@ -347,7 +347,7 @@ def file_system():
     elif x == "3":
          beath_file()
     elif x == "4":
-        arther_file()
+        arthur_file()
     elif x == "5":
         fontame_file()
     elif x == "6":
@@ -499,7 +499,7 @@ import random
 criminal = None
 def yes():
     global criminal
-    yes = random.randint(1,1)
+    yes = random.randint(1,9)
     if yes == 1:
         criminal = ("marea")
         marea()
@@ -527,9 +527,6 @@ def yes():
     elif yes == 9:
         criminal = ("flint")
         flint()
-    elif yes == 10:
-        criminal = ("puff")
-        puff()
     else:
         return yes()
 
@@ -688,7 +685,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 #gerald section
 def gerald():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global weponn_1
     s = random.randint(1,4)
     if s == 1:
@@ -844,7 +841,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 #beath
 def beath():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
     if s == 1:
@@ -999,7 +996,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 
 def arther():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
     if s == 1:
@@ -1049,7 +1046,7 @@ def arther():
         print("puff has been murderd")
         gone_1 = ("puff")
     
-    secound_weponnnnn()
+    secound_weponnnn()
 
 wepon_2 = None
 
@@ -1058,7 +1055,7 @@ def secound_weponnnn():
     print("you arive on the crime scean and find a nother murder wepon")
     wepon_2 = "pan"
 
-    two_day_wrap_uppppp(wepon_1,wepon_2,gone_1)
+    two_day_wrap_upppp(wepon_1,wepon_2,gone_1)
 
 def two_day_wrap_upppp(wepon_1,wepon_2,gone_1):
     print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
@@ -1154,7 +1151,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 
 def fontame():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
     if s == 1:
@@ -1213,7 +1210,7 @@ def secound_wepon():
     print("you arive on the crime scean and find a nother murder wepon")
     wepon_2 = "pan"
 
-    two_day_wrap_uppppppp(wepon_1,wepon_2,gone_1)
+    two_day_wrap_upppppp(wepon_1,wepon_2,gone_1)
 
 def two_day_wrap_upppppp(wepon_1,wepon_2,gone_1):
     print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
@@ -1225,7 +1222,7 @@ def two_day_wrap_upppppp(wepon_1,wepon_2,gone_1):
     print("2.no")
     choose = input(">")
     if choose == "1":
-        moveing_onnnnnn()
+        moveing_onnnnn()
     else:
         print("invaled input")
         return two_day_wrap_up(wepon_1,wepon_2,gone_1)
@@ -1274,7 +1271,7 @@ def moveing_onnnnn():
          print("a pot as the murder wepon")
          wepon_3 = ("pot")
 
-    himmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
+    himmmm(gone_1,wepon_3,wepon_2,wepon_1,)
 
 def himmmm(gone_1,wepon_3,wepon_2,wepon_1):
     print("yet a nother murder time is running out you must choose")
@@ -1308,7 +1305,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 #miss catealda track
 def miss_catealda():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
     if s == 1:
@@ -1358,7 +1355,7 @@ def miss_catealda():
         print("puff has been murderd")
         gone_1 = ("puff")
     
-    secound_weponnnnnnn()
+    secound_weponnnnnn()
 
 wepon_2 = None
 
@@ -1367,7 +1364,7 @@ def secound_weponnnnnn():
     print("you arive on the crime scean and find a nother murder wepon")
     wepon_2 = "pan"
 
-    two_day_wrap_uppppppppp(wepon_1,wepon_2,gone_1)
+    two_day_wrap_upppppppp(wepon_1,wepon_2,gone_1)
 
 def two_day_wrap_upppppppp(wepon_1,wepon_2,gone_1):
     print("two murder weopons and two murders.you search the crime scean over and over agian and you find a window ajar and muddy foot steps leading to the fence you stop.you mesaure the food steps")
@@ -1379,7 +1376,7 @@ def two_day_wrap_upppppppp(wepon_1,wepon_2,gone_1):
     print("2.no")
     choose = input(">")
     if choose == "1":
-        moveing_onnnnnnnn()
+        moveing_onnnnnnn()
     else:
         print("invaled input")
         return two_day_wrap_up(wepon_1,wepon_2,gone_1)
@@ -1428,7 +1425,7 @@ def moveing_onnnnnnn():
          print("a pot as the murder wepon")
          wepon_3 = ("pot")
 
-    himmmmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
+    himmmmmm(gone_1,wepon_3,wepon_2,wepon_1,)
 
 def himmmmmm(gone_1,wepon_3,wepon_2,wepon_1):
     print("yet a nother murder time is running out you must choose")
@@ -1463,7 +1460,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 #felix track
 def felix():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
     if s == 1:
@@ -1534,7 +1531,7 @@ def two_day_wrap_upppppppppp(wepon_1,wepon_2,gone_1):
     print("2.no")
     choose = input(">")
     if choose == "1":
-        moveing_onnnnnnnnnn()
+        moveing_onnnnnnnnn()
     else:
         print("invaled input")
         return two_day_wrap_up(wepon_1,wepon_2,gone_1)
@@ -1617,7 +1614,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 
 def casper():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
     if s == 1:
@@ -1771,7 +1768,7 @@ def guilty_or_no_gulity(crimnal,gone_1,gone_2):
         print("ok")
 
 def flint():
-        print("you wake up the next day and serach the crime scean.")
+    print("you wake up the next day and serach the crime scean.")
     global wepon_1
     s = random.randint(1,4)
     if s == 1:
@@ -2027,11 +2024,15 @@ def pick_up():
         print("invaled input")
         two()
 
+def pisttion():
+    print("you dont eat your food and slowly starve out eventuly your food is stolen and you die")
+    print("ending: gulag 2")
 def prision():
     print("you eat the food it isent delicios but it keep you feed after monthes in the prision you are put out in the cold to work and you dont make it")
     print("ending:gulag")
 def keep_walking():
-    print("")
+    print("you go to the gulag and you slowly died of hunger")
+    print("ending:gulag part 3")
 
 def escape():
     print("you escape the line of prisoners and run for it but a geard chases after you and you are cornerd the gared looks to be only about 20 he askes you to go back to the line or he will shoot")
