@@ -333,13 +333,10 @@ def file_system():
     print("it is laght at night when you git the call you head to the neborhood and you head there. There was murder and you must find the killer (play dratmic music)")
     print("there was 10 sucspects marea,gerald,beath,arther,fontame,miss catealda,felix,casper,flint and puff")
     print("after takeing statments you go back to the police station")
+    print("you cheack a persons files")
+    print("witch persons 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
     x = input("do you check each persons files\n>")
-    if x == "yes":
-      y = input("witch persons 1.marea,2.gerald,3.beath,4.arther,5.fontame,6.miss catealda,7.felix,8.casper,9.flint,10.puff")
-    
-    else:
-        yes()
-    
+
     if x == "1":
         marea_file()
     elif x == "2":
