@@ -3,7 +3,7 @@
 # Successfully convert all of the following variables to another type and print the result
 # If the conversion prints without errors, you did the conversion correctly
 
-a = 115         #int -> string
+'''a = 115         #int -> string
 b = 3.14        #float -> string
 c = "68"        #string -> int
 d = "True"      #string -> boolean
@@ -33,8 +33,12 @@ print(c)
 d = "Ture"
 d = bool("true")
 
-print(d)
+print(d)'''
 
-
+import time
+z = []
+for i in z:
+    print("supprize")
+    time.sleep(120)
 
 

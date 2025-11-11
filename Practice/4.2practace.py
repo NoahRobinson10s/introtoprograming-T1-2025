@@ -26,4 +26,6 @@ for i in range(0, len(numbers)):
                 numbers.pop(i)
 
 print(numbers)
+
+
         
