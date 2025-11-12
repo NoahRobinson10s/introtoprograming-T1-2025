@@ -92,6 +92,26 @@ for _ in range(1):
     t.forward(120)
     t.left(90)
     t.forward(100)
+    t.left(30)
+    t.forward(100)
+    t.right(30)
+    t.forward(100)
+    t.circle(-50,180)
+    t.left(90)
+    t.forward(100)
+    t.left(130)
+    t.forward(100)
+    t.right(130)
+    t.forward(100)
+    t.right(90)
+    t.forward(5)
+    t.right(50)
+    t.forward(100)
+    t.left(50)
+    t.forward(5)
+    t.left(90)
+    t.forward(100)
+    
     
 
 
